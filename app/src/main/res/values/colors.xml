@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="status_bar_color">#FF000000</color>
+    <color name="layout_border_color">#FF111111</color>
+    <color name="color_red">#F00</color>
+    <color name="color_blue">#00F</color>
+    <color name="color_black">#000</color>
+    <color name="color_white">#FFF</color>
+    <color name="wifi_btn_back">#FDFFEDC3</color>
+    <color name="wifi_btn_stroke">#FFFFC635</color>
+    <color name="wifi_peer_detail_fragment_stroke">#FFFF9800</color>
+
+</resources>
+

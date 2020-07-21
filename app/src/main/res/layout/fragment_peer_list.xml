@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WiFiP2P.PeerListFragment">
+
+
+    <!-- Self information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@drawable/wifi_list_layout"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/text_margin">
+            <!--android:background="?android:attr/activatedBackgroundIndicator"-->
+
+            <TextView
+                android:id="@+id/textview_my"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wifi_btn_layout"
+                android:gravity="center_vertical"
+                android:text="@string/label_me"
+                android:textAlignment="center" />
+            <!--View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/holo_blue_light" /-->
+            <TextView
+                android:id="@+id/my_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/my_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+            <!--android:focusable="true" 포커스가 있어야 흐르는 효과가 생김
+                android:marqueeRepeatLimit="marquee_forever" 반복횟수
+                android:text="가나다라마바사아자차카타파하abcdefghijklmnopqrstuvwxyz가나다라마바사아자차카타파하abcdefghijklmnopqrstuvwxyz"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wifi_list_layout"
+            android:orientation="vertical">
+            <!--
+            android:background="?android:attr/activatedBackgroundIndicator"-->
+
+            <TextView
+                android:id="@+id/textview_peers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wifi_btn_layout"
+                android:gravity="center_vertical"
+                android:text="@string/label_peers"
+                android:textAlignment="center" />
+            <!--View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:gravity="center_vertical"
+            android:background="@android:color/holo_blue_light" /-->
+
+            <!-- Available peers -->
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="false" />
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/empty_message" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
